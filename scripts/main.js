@@ -23,10 +23,10 @@
 
 	var introElem = document.querySelectorAll("li.chapter[data-level=\"1.1\"] a")[0];
 	if (introElem) {
-		introElem.innerHTML = "React Best Practices";
+		introElem.innerHTML = "ES6-Cheatsheet";
 	}
-	document.title = "React Best Practices";
-	
+	document.title = "ES6-Cheatsheet";
+
 	var abtContainer = document.createElement("div");
 	abtContainer.id = "abtContainer_kc";
 	abtContainer.style.height = "362px";

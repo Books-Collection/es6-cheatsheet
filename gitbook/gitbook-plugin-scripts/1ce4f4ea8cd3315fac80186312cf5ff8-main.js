@@ -26,4 +26,21 @@
 		introElem.innerHTML = "ES6-Cheatsheet";
 	}
 	document.title = "ES6-Cheatsheet";
+
+	var abtContainer = document.createElement("div");
+	abtContainer.id = "abtContainer_kc";
+	abtContainer.style.height = "362px";
+	abtContainer.style.backgroundColor = "#fff";
+	abtContainer.style.border = "1px solid #000";
+	abtContainer.style.position = "absolute";
+	abtContainer.style.left = abtContainer.style.right = "30px";
+	abtContainer.style.top = "100px";
+	abtContainer.style.borderRadius = "22px";
+	abtContainer.style.fontFamily = "Verdana";
+	abtContainer.style.padding = "10px";
+	abtContainer.style.fontSize = "11px";
+	abtContainer.style.color = "#000";
+	abtContainer.innerHTML = "About:<br/><br/>This documentation was compiled/authored by<br/><span style=\"font-weight:bold;\">K.C.Ashish Kumar</span><br/><br/>For more information please visit <a href=\"http://www.ashishkumarkc.com\" target=\"_blank\">http://www.ashishkumarkc.com</a><br/><br/><br/><img src=\"images/the-k.png\" style=\"width:198px;position:absolute;left:50%;margin-left:-99px;\" />";
+	document.querySelectorAll(".book-summary")[0].appendChild(abtContainer);
+
 }());
