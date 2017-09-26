@@ -7,22 +7,22 @@
 	var checkAndAdjust = function() {
 		var bookBody = document.querySelectorAll(".book-body")[0];
 		var bodyInner = document.querySelectorAll(".book-body .body-inner")[0];
-		if (bodyInner && bookBody) {
-			bookBody.scrollTop = 0;
-			bodyInner.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-			document.getElementsByTagName("body")[0].scrollTop = 0;
-			window.scrollTo(0, 0);
+		var bookHeaderActions = document.querySelectorAll(".book-header .js-toolbar-action")[0];
+		if (bookHeaderActions) {
+			setTimeout(function() {
+				bookBody.scrollTop = 0;
+				bodyInner.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+				document.getElementsByTagName("body")[0].scrollTop = 0;
+				window.scrollTo(0, 0);
+			}, 605);
 		} else {
 			setTimeout(function() {
 				checkAndAdjust();
-			}, 605);
+			}, 242);
 		}
-
 	};
-	setTimeout(function() {
-		checkAndAdjust();
-	}, 605);
+	checkAndAdjust();
 
 	var introElem = document.querySelectorAll("li.chapter[data-level=\"1.1\"] a")[0];
 	if (introElem) {
