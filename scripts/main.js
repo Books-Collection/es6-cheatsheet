@@ -28,7 +28,7 @@
 	if (introElem) {
 		introElem.innerHTML = "ES6-Cheatsheet";
 	}
-	document.title = "ES6-Cheatsheet";
+	document.title = "ES6 Cheatsheet - ashishkumarkc.com";
 
 	var abtContainer = document.createElement("div");
 	abtContainer.id = "abtContainer_kc";
