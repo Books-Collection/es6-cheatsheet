@@ -23,7 +23,7 @@
 
 	var introElem = document.querySelectorAll("li.chapter[data-level=\"1.1\"] a")[0];
 	if (introElem) {
-		introElem.innerHTML = "ES6-Cheatsheet";
+		introElem.innerHTML = "ES6 Cheatsheet - ashishkumarkc.com";
 	}
 	document.title = "ES6-Cheatsheet";
 
