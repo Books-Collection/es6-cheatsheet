@@ -22,7 +22,9 @@
 			}, 242);
 		}
 	};
-	checkAndAdjust();
+	if(window.top.location.hash==="" || window.top.location.hash==="#"){
+		checkAndAdjust();
+	}
 
 	var introElem = document.querySelectorAll("li.chapter[data-level=\"1.1\"] a")[0];
 	if (introElem) {
