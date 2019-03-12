@@ -45,7 +45,7 @@
 	abtContainer.style.padding = "10px";
 	abtContainer.style.fontSize = "11px";
 	abtContainer.style.color = "#000";
-	abtContainer.innerHTML = "About:<br/><br/>This documentation was compiled/authored by<br/><span style=\"font-weight:bold;\">K.C.Ashish Kumar</span><br/><br/>For more information please visit <a href=\"http://www.ashishkumarkc.com\" target=\"_blank\">http://www.ashishkumarkc.com</a><br/><br/><br/><img src=\"images/the-k.png\" style=\"width:198px;position:absolute;left:50%;margin-left:-99px;\" />";
+	abtContainer.innerHTML = "About:<br/><br/>This documentation was compiled/authored by<br/><span style=\"font-weight:bold;\">K.C.Ashish Kumar</span><br/><br/>For more information please visit <a href=\"https://www.ashishkumarkc.com\" target=\"_blank\">https://www.ashishkumarkc.com</a><br/><br/><br/><img src=\"images/the-k.png\" style=\"width:198px;position:absolute;left:50%;margin-left:-99px;\" />";
 	document.querySelectorAll(".book-summary")[0].appendChild(abtContainer);
 
 	if (window.top.location.href.indexOf("ashishkumarkc.com") !== -1) {
