@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+
+Sitemap: https://es6-cheatsheet.ashishkumarkc.com/sitemap.xml

@@ -1,0 +1,1142 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ES6 Cheatsheet - ashishkumarkc.com</title>
+        <meta name="keywords" content="about,ac,add,adding,addition,age,alert,amplifier,analog,analysis,and,android,angular,any,app,append,apply,arbitrary,arg,args,argument,arguments,array,arrow,as,assign,async,audio,avoid,b,backup,based,basic,be,beginners,best,bind,bird,black,blue,book,buy,by,c,c#,cable,call,callback,can,cat,caterpillar,chain,change,channel,character,characters,cheap,cheat,cheaters,cheats,cheatsheet,chemistry,chip,circuit,class,classes,clean,clear,code,codes,coding,coffeescript,com,comments,components,computer,console,constructor,control,controls,conventions,convert,cost,create,creating,cro,csgenerator,css,data,dc,dds,declaration,declare,default,defaultvalue,defineproperty,design,developer,developers,digital,do,dual,e,each,el,electric,end,error,es6,example,examples,explain,explained,export,exports,express,fat,features,file,find,first,flavors,fn,food,foods,for,foreach,form,free,freq,frequency,frisky,from,front,function,functions,gen,generator,generators,genset,get,global,good,guidelines,height,help,high,how,html,i,ic,icl8038,if,import,importers,in,inheritance,inline,input,inside,instance,instanceof,introduction,invoke,is,its,j,java,javascript,jquery,js,json,key,keyword,kit,less,libraries,library,linear,list,log,logic,looking,low,main,make,makes,mandaliof,map,mapper,math,meow,method,methods,mix,mixing,module,much,multifunction,my,nama,name,named,names,namespace,naming,need,new,next,node,nodejs,now,number,object,objects,of,offset,old,onclick,online,oop,operation,options,oscilloscope,our,output,own,panel,param,parameter,parameters,parse,parts,pass,passing,path,pattern,patterns,pc,person,personal,php,portable,power,practical,practice,practices,price,principle,private,programmable,programmers,programming,programs,project,projects,promise,property,proto,prototypal,prototype,prototypes,prototyping,public,python,quicksheet,r,react,reference,require,rest,return,returns,right,run,s6,science,scope,script,search,security,set,settimeout,sheet,shell,signal,simple,simulator,sine,sinusoidal,slice,specification,square,standard,standards,storage,store,string,strings,struct,structures,style,subroutine,super,supply,sweep,switch,symbol,symbols,sync,syntax,table,tag,tags,tasks,template,the,this,to,ttl,type,typeof,undefined,understanding,update,url,use,used,uses,value,values,var,variable,visual,wave,waveform,waveforms,we,web,website,websites,what,where,which,who,why,will,window,with,working,works,write,writing,written" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css" />
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="es6-cheatsheet">es6-cheatsheet</h1>
+<p>(Compiled by <strong><a href="https://www.ashishkumarkc.com" target="_blank">K.C.Ashish Kumar</a></strong>)</p>
+<p>A cheatsheet containing ES2015 [ES6] tips, tricks, best practices and code
+snippet examples for your day to day workflow. Contributions are welcome!</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#var-versus-let--const">var versus let / const</a></li>
+<li><a href="#replacing-iifes-with-blocks">Replacing IIFEs with Blocks</a></li>
+<li><a href="#arrow-functions">Arrow Functions</a></li>
+<li><a href="#strings">Strings</a></li>
+<li><a href="#destructuring">Destructuring</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#symbols">Symbols</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#weakmaps">WeakMaps</a></li>
+<li><a href="#promises">Promises</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#async-await">Async Await</a></li>
+<li><a href="#getter-and-setter-functions">Getter/Setter functions</a></li>
+</ul>
+<h2 id="var-versus-let--const">var versus let / const</h2>
+<blockquote>
+<p>Besides <code>var</code>, we now have access to two new identifiers for storing values
+&#x2014;<code>let</code> and <code>const</code>. Unlike <code>var</code>, <code>let</code> and <code>const</code> statements are not hoisted
+to the top of their enclosing scope.</p>
+</blockquote>
+<p>An example of using <code>var</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> snack = <span class="hljs-string">&apos;Meow Mix&apos;</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFood</span>(<span class="hljs-params">food</span>) </span>{
+    <span class="hljs-keyword">if</span> (food) {
+        <span class="hljs-keyword">var</span> snack = <span class="hljs-string">&apos;Friskies&apos;</span>;
+        <span class="hljs-keyword">return</span> snack;
+    }
+    <span class="hljs-keyword">return</span> snack;
+}
+
+getFood(<span class="hljs-literal">false</span>); <span class="hljs-comment">// undefined</span>
+</code></pre>
+<p>However, observe what happens when we replace <code>var</code> using <code>let</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> snack = <span class="hljs-string">&apos;Meow Mix&apos;</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFood</span>(<span class="hljs-params">food</span>) </span>{
+    <span class="hljs-keyword">if</span> (food) {
+        <span class="hljs-keyword">let</span> snack = <span class="hljs-string">&apos;Friskies&apos;</span>;
+        <span class="hljs-keyword">return</span> snack;
+    }
+    <span class="hljs-keyword">return</span> snack;
+}
+
+getFood(<span class="hljs-literal">false</span>); <span class="hljs-comment">// &apos;Meow Mix&apos;</span>
+</code></pre>
+<p>This change in behavior highlights that we need to be careful when refactoring
+legacy code which uses <code>var</code>. Blindly replacing instances of <code>var</code> with <code>let</code>
+may lead to unexpected behavior.</p>
+<blockquote>
+<p><strong>Note</strong>: <code>let</code> and <code>const</code> are block scoped. Therefore, referencing
+block-scoped identifiers before they are defined will produce
+a <code>ReferenceError</code>.</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// ReferenceError: x is not defined</span>
+
+<span class="hljs-keyword">let</span> x = <span class="hljs-string">&apos;hi&apos;</span>;
+</code></pre>
+<blockquote>
+<p><strong>Best Practice</strong>: Leave <code>var</code> declarations inside of legacy code to denote
+that it needs to be carefully refactored. When working on a new codebase, use
+<code>let</code> for variables that will change their value over time, and <code>const</code> for
+variables which cannot be reassigned.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="replacing-iifes-with-blocks">Replacing IIFEs with Blocks</h2>
+<blockquote>
+<p>A common use of <strong>Immediately Invoked Function Expressions</strong> is to enclose
+values within its scope. In ES6, we now have the ability to create block-based
+scopes and therefore are not limited purely to function-based scope.</p>
+</blockquote>
+<pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> food = <span class="hljs-string">&apos;Meow Mix&apos;</span>;
+}());
+
+<span class="hljs-built_in">console</span>.log(food); <span class="hljs-comment">// Reference Error</span>
+</code></pre>
+<p>Using ES6 Blocks:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-keyword">let</span> food = <span class="hljs-string">&apos;Meow Mix&apos;</span>;
+};
+
+<span class="hljs-built_in">console</span>.log(food); <span class="hljs-comment">// Reference Error</span>
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="arrow-functions">Arrow Functions</h2>
+<p>Often times we have nested functions in which we would like to preserve the
+context of <code>this</code> from its lexical scope. An example is shown below:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+Person.prototype.prefixName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">character</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + character; <span class="hljs-comment">// Cannot read property &apos;name&apos; of undefined</span>
+    });
+};
+</code></pre>
+<p>One common solution to this problem is to store the context of <code>this</code> using
+a variable:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+Person.prototype.prefixName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>; <span class="hljs-comment">// Store the context of this</span>
+    <span class="hljs-keyword">return</span> arr.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">character</span>) </span>{
+        <span class="hljs-keyword">return</span> that.name + character;
+    });
+};
+</code></pre>
+<p>We can also pass in the proper context of <code>this</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+Person.prototype.prefixName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">character</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + character;
+    }, <span class="hljs-keyword">this</span>);
+};
+</code></pre>
+<p>As well as bind the context:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+Person.prototype.prefixName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">character</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + character;
+    }.bind(<span class="hljs-keyword">this</span>));
+};
+</code></pre>
+<p>Using <strong>Arrow Functions</strong>, the lexical value of <code>this</code> isn&apos;t shadowed and we
+can re-write the above as shown:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+Person.prototype.prefixName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.map(character =&gt; <span class="hljs-keyword">this</span>.name + character);
+};
+</code></pre>
+<blockquote>
+<p><strong>Best Practice</strong>: Use <strong>Arrow Functions</strong> whenever you need to preserve the
+lexical value of <code>this</code>.</p>
+</blockquote>
+<p>Arrow Functions are also more concise when used in function expressions which
+simply return a value:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> squares = arr.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{ <span class="hljs-keyword">return</span> x * x }); <span class="hljs-comment">// Function Expression</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-keyword">const</span> squares = arr.map(x =&gt; x * x); <span class="hljs-comment">// Arrow Function for terser implementation</span>
+</code></pre>
+<blockquote>
+<p><strong>Best Practice</strong>: Use <strong>Arrow Functions</strong> in place of function expressions
+when possible.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="strings">Strings</h2>
+<p>With ES6, the standard library has grown immensely. Along with these changes
+are new methods which can be used on strings, such as <code>.includes()</code> and
+<code>.repeat()</code>.</p>
+<h3 id="includes-">.includes( )</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> string = <span class="hljs-string">&apos;food&apos;</span>;
+<span class="hljs-keyword">var</span> substring = <span class="hljs-string">&apos;foo&apos;</span>;
+
+<span class="hljs-built_in">console</span>.log(string.indexOf(substring) &gt; <span class="hljs-number">-1</span>);
+</code></pre>
+<p>Instead of checking for a return value <code>&gt; -1</code> to denote string containment,
+we can simply use <code>.includes()</code> which will return a boolean:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> string = <span class="hljs-string">&apos;food&apos;</span>;
+<span class="hljs-keyword">const</span> substring = <span class="hljs-string">&apos;foo&apos;</span>;
+
+<span class="hljs-built_in">console</span>.log(string.includes(substring)); <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="repeat-">.repeat( )</h3>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">repeat</span>(<span class="hljs-params">string, count</span>) </span>{
+    <span class="hljs-keyword">var</span> strings = [];
+    <span class="hljs-keyword">while</span>(strings.length &lt; count) {
+        strings.push(string);
+    }
+    <span class="hljs-keyword">return</span> strings.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+</code></pre>
+<p>In ES6, we now have access to a terser implementation:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// String.repeat(numberOfRepetitions)</span>
+<span class="hljs-string">&apos;meow&apos;</span>.repeat(<span class="hljs-number">3</span>); <span class="hljs-comment">// &apos;meowmeowmeow&apos;</span>
+</code></pre>
+<h3 id="template-literals">Template Literals</h3>
+<p>Using <strong>Template Literals</strong>, we can now construct strings that have special
+characters in them without needing to escape them explicitly.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> text = <span class="hljs-string">&quot;This string contains \&quot;double quotes\&quot; which are escaped.&quot;</span>;
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = <span class="hljs-string">`This string contains &quot;double quotes&quot; which don&apos;t need to be escaped anymore.`</span>;
+</code></pre>
+<p><strong>Template Literals</strong> also support interpolation, which makes the task of
+concatenating strings and values:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;Tiger&apos;</span>;
+<span class="hljs-keyword">var</span> age = <span class="hljs-number">13</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My cat is named &apos;</span> + name + <span class="hljs-string">&apos; and is &apos;</span> + age + <span class="hljs-string">&apos; years old.&apos;</span>);
+</code></pre>
+<p>Much simpler:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> name = <span class="hljs-string">&apos;Tiger&apos;</span>;
+<span class="hljs-keyword">const</span> age = <span class="hljs-number">13</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`My cat is named <span class="hljs-subst">${name}</span> and is <span class="hljs-subst">${age}</span> years old.`</span>);
+</code></pre>
+<p>In ES5, we handled new lines as follows:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> text = (
+    <span class="hljs-string">&apos;cat\n&apos;</span> +
+    <span class="hljs-string">&apos;dog\n&apos;</span> +
+    <span class="hljs-string">&apos;nickelodeon&apos;</span>
+);
+</code></pre>
+<p>Or:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> text = [
+    <span class="hljs-string">&apos;cat&apos;</span>,
+    <span class="hljs-string">&apos;dog&apos;</span>,
+    <span class="hljs-string">&apos;nickelodeon&apos;</span>
+].join(<span class="hljs-string">&apos;\n&apos;</span>);
+</code></pre>
+<p><strong>Template Literals</strong> will preserve new lines for us without having to
+explicitly place them in:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = ( <span class="hljs-string">`cat
+dog
+nickelodeon`</span>
+);
+</code></pre>
+<p><strong>Template Literals</strong> can accept expressions, as well:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> today = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+<span class="hljs-keyword">let</span> text = <span class="hljs-string">`The time and date is <span class="hljs-subst">${today.toLocaleString()}</span>`</span>;
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="destructuring">Destructuring</h2>
+<p>Destructuring allows us to extract values from arrays and objects (even deeply
+nested) and store them in variables with a more convenient syntax.</p>
+<h3 id="destructuring-arrays">Destructuring Arrays</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-keyword">var</span> a = arr[<span class="hljs-number">0</span>];
+<span class="hljs-keyword">var</span> b = arr[<span class="hljs-number">1</span>];
+<span class="hljs-keyword">var</span> c = arr[<span class="hljs-number">2</span>];
+<span class="hljs-keyword">var</span> d = arr[<span class="hljs-number">3</span>];
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> [a, b, c, d] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 2</span>
+</code></pre>
+<h3 id="destructuring-objects">Destructuring Objects</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> luke = { occupation: <span class="hljs-string">&apos;jedi&apos;</span>, father: <span class="hljs-string">&apos;anakin&apos;</span> };
+<span class="hljs-keyword">var</span> occupation = luke.occupation; <span class="hljs-comment">// &apos;jedi&apos;</span>
+<span class="hljs-keyword">var</span> father = luke.father; <span class="hljs-comment">// &apos;anakin&apos;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> luke = { occupation: <span class="hljs-string">&apos;jedi&apos;</span>, father: <span class="hljs-string">&apos;anakin&apos;</span> };
+<span class="hljs-keyword">let</span> {occupation, father} = luke;
+
+<span class="hljs-built_in">console</span>.log(occupation); <span class="hljs-comment">// &apos;jedi&apos;</span>
+<span class="hljs-built_in">console</span>.log(father); <span class="hljs-comment">// &apos;anakin&apos;</span>
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="modules">Modules</h2>
+<p>Prior to ES6, we used libraries such as <a href="http://browserify.org/" target="_blank">Browserify</a>
+to create modules on the client-side, and <a href="https://nodejs.org/api/modules.html#modules_module_require_id" target="_blank">require</a>
+in <strong>Node.js</strong>. With ES6, we can now directly use modules of all types
+(AMD and CommonJS).</p>
+<h3 id="exporting-in-commonjs">Exporting in CommonJS</h3>
+<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = <span class="hljs-number">1</span>;
+<span class="hljs-built_in">module</span>.exports = { foo: <span class="hljs-string">&apos;bar&apos;</span> };
+<span class="hljs-built_in">module</span>.exports = [<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>];
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span> (<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h3 id="exporting-in-es6">Exporting in ES6</h3>
+<p>With ES6, we have various flavors of exporting. We can perform
+<strong>Named Exports</strong>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> name = <span class="hljs-string">&apos;David&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> age  = <span class="hljs-number">25</span>;&#x200B;&#x200B;
+</code></pre>
+<p>As well as <strong>exporting a list</strong> of objects:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumTwo</span>(<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumThree</span>(<span class="hljs-params">a, b, c</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b + c;
+}
+
+<span class="hljs-keyword">export</span> { sumTwo, sumThree };
+</code></pre>
+<p>We can also export functions, objects and values (etc.) simply by using the <code>export</code> keyword:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumTwo</span>(<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumThree</span>(<span class="hljs-params">a, b, c</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b + c;
+}
+</code></pre>
+<p>And lastly, we can <strong>export default bindings</strong>:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumTwo</span>(<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumThree</span>(<span class="hljs-params">a, b, c</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b + c;
+}
+
+<span class="hljs-keyword">let</span> api = {
+    sumTwo,
+    sumThree
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> api;
+
+<span class="hljs-comment">/* Which is the same as
+ * export { api as default };
+ */</span>
+</code></pre>
+<blockquote>
+<p><strong>Best Practices</strong>: Always use the <code>export default</code> method at <strong>the end</strong> of
+the module. It makes it clear what is being exported, and saves time by having
+to figure out what name a value was exported as. More so, the common practice
+in CommonJS modules is to export a single value or object. By sticking to this
+paradigm, we make our code easily readable and allow ourselves to interpolate
+between CommonJS and ES6 modules.</p>
+</blockquote>
+<h3 id="importing-in-es6">Importing in ES6</h3>
+<p>ES6 provides us with various flavors of importing. We can import an entire file:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">&apos;underscore&apos;</span>;
+</code></pre>
+<blockquote>
+<p>It is important to note that simply <strong>importing an entire file will execute
+all code at the top level of that file</strong>.</p>
+</blockquote>
+<p>Similar to Python, we have named imports:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { sumTwo, sumThree } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;math/addition&apos;</span>;
+</code></pre>
+<p>We can also rename the named imports:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> {
+    sumTwo <span class="hljs-keyword">as</span> addTwoNumbers,
+    sumThree <span class="hljs-keyword">as</span> sumThreeNumbers
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;math/addition&apos;</span>;
+</code></pre>
+<p>In addition, we can <strong>import all the things</strong> (also called namespace import):</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> util <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;math/addition&apos;</span>;
+</code></pre>
+<p>Lastly, we can import a list of values from a module:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> additionUtil <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;math/addition&apos;</span>;
+<span class="hljs-keyword">const</span> { sumTwo, sumThree } = additionUtil;
+</code></pre>
+<p>Importing from the default binding like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> api <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;math/addition&apos;</span>;
+<span class="hljs-comment">// Same as: import { default as api } from &apos;math/addition&apos;;</span>
+</code></pre>
+<p>While it is better to keep the exports simple, but we can sometimes mix default import and mixed import if needed.
+When we are exporting like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// foos.js</span>
+<span class="hljs-keyword">export</span> { foo <span class="hljs-keyword">as</span> <span class="hljs-keyword">default</span>, foo1, foo2 };
+</code></pre>
+<p>We can import them like the following:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> foo, { foo1, foo2 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;foos&apos;</span>;
+</code></pre>
+<p>When importing a module exported using commonjs syntax (such as React) we can do:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">const</span> { Component, PropTypes } = React;
+</code></pre>
+<p>This can also be simplified further, using:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> React, { Component, PropTypes } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+</code></pre>
+<blockquote>
+<p><strong>Note</strong>: Values that are exported are <strong>bindings</strong>, not references.
+Therefore, changing the binding of a variable in one module will affect the
+value within the exported module. Avoid changing the public interface of these
+exported values.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="parameters">Parameters</h2>
+<p>In ES5, we had varying ways to handle functions which needed <strong>default values</strong>,
+<strong>indefinite arguments</strong>, and <strong>named parameters</strong>. With ES6, we can accomplish
+all of this and more using more concise syntax.</p>
+<h3 id="default-parameters">Default Parameters</h3>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addTwoNumbers</span>(<span class="hljs-params">x, y</span>) </span>{
+    x = x || <span class="hljs-number">0</span>;
+    y = y || <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> x + y;
+}
+</code></pre>
+<p>In ES6, we can simply supply default values for parameters in a function:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addTwoNumbers</span>(<span class="hljs-params">x=0, y=0</span>) </span>{
+    <span class="hljs-keyword">return</span> x + y;
+}
+</code></pre>
+<pre><code class="lang-javascript">addTwoNumbers(<span class="hljs-number">2</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// 6</span>
+addTwoNumbers(<span class="hljs-number">2</span>); <span class="hljs-comment">// 2</span>
+addTwoNumbers(); <span class="hljs-comment">// 0</span>
+</code></pre>
+<h3 id="rest-parameters">Rest Parameters</h3>
+<p>In ES5, we handled an indefinite number of arguments like so:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">logArguments</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">arguments</span>.length; i++) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>[i]);
+    }
+}
+</code></pre>
+<p>Using the <strong>rest</strong> operator, we can pass in an indefinite amount of arguments:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">logArguments</span>(<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> arg <span class="hljs-keyword">of</span> args) {
+        <span class="hljs-built_in">console</span>.log(arg);
+    }
+}
+</code></pre>
+<h3 id="named-parameters">Named Parameters</h3>
+<p>One of the patterns in ES5 to handle named parameters was to use the <strong>options
+object</strong> pattern, adopted from jQuery.</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initializeCanvas</span>(<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-keyword">var</span> height = options.height || <span class="hljs-number">600</span>;
+    <span class="hljs-keyword">var</span> width  = options.width  || <span class="hljs-number">400</span>;
+    <span class="hljs-keyword">var</span> lineStroke = options.lineStroke || <span class="hljs-string">&apos;black&apos;</span>;
+}
+</code></pre>
+<p>We can achieve the same functionality using destructuring as a formal parameter
+to a function:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initializeCanvas</span>(<span class="hljs-params">
+    { height=600, width=400, lineStroke=&apos;black&apos;}</span>) </span>{
+        <span class="hljs-comment">// Use variables height, width, lineStroke here</span>
+    }
+</code></pre>
+<p>If we want to make the entire value optional, we can do so by destructuring an
+empty object:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initializeCanvas</span>(<span class="hljs-params">
+    { height=600, width=400, lineStroke=&apos;black&apos;} = {}</span>) </span>{
+        <span class="hljs-comment">// ...</span>
+    }
+</code></pre>
+<h3 id="spread-operator">Spread Operator</h3>
+<p>In ES5, we could find the max of values in an array by using the <code>apply</code> method on <code>Math.max</code> like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.max.apply(<span class="hljs-literal">null</span>, [<span class="hljs-number">-1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">9001</span>, <span class="hljs-number">-32</span>]); <span class="hljs-comment">// 9001</span>
+</code></pre>
+<p>In ES6, we can now use the spread operator to pass an array of values to be used as
+parameters to a function:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.max(...[<span class="hljs-number">-1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">9001</span>, <span class="hljs-number">-32</span>]); <span class="hljs-comment">// 9001</span>
+</code></pre>
+<p>We can concat array literals easily with this intuitive syntax:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> cities = [<span class="hljs-string">&apos;San Francisco&apos;</span>, <span class="hljs-string">&apos;Los Angeles&apos;</span>];
+<span class="hljs-keyword">let</span> places = [<span class="hljs-string">&apos;Miami&apos;</span>, ...cities, <span class="hljs-string">&apos;Chicago&apos;</span>]; <span class="hljs-comment">// [&apos;Miami&apos;, &apos;San Francisco&apos;, &apos;Los Angeles&apos;, &apos;Chicago&apos;]</span>
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="classes">Classes</h2>
+<p>Prior to ES6, we implemented Classes by creating a constructor function and
+adding properties by extending the prototype:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name, age, gender</span>) </span>{
+    <span class="hljs-keyword">this</span>.name   = name;
+    <span class="hljs-keyword">this</span>.age    = age;
+    <span class="hljs-keyword">this</span>.gender = gender;
+}
+
+Person.prototype.incrementAge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.age += <span class="hljs-number">1</span>;
+};
+</code></pre>
+<p>And created extended classes by the following:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Personal</span>(<span class="hljs-params">name, age, gender, occupation, hobby</span>) </span>{
+    Person.call(<span class="hljs-keyword">this</span>, name, age, gender);
+    <span class="hljs-keyword">this</span>.occupation = occupation;
+    <span class="hljs-keyword">this</span>.hobby = hobby;
+}
+
+Personal.prototype = <span class="hljs-built_in">Object</span>.create(Person.prototype);
+Personal.prototype.constructor = Personal;
+Personal.prototype.incrementAge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    Person.prototype.incrementAge.call(<span class="hljs-keyword">this</span>);
+    <span class="hljs-keyword">this</span>.age += <span class="hljs-number">20</span>;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.age);
+};
+</code></pre>
+<p>ES6 provides much needed syntactic sugar for doing this under the hood. We can
+create Classes directly:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+    <span class="hljs-keyword">constructor</span>(name, age, gender) {
+        <span class="hljs-keyword">this</span>.name   = name;
+        <span class="hljs-keyword">this</span>.age    = age;
+        <span class="hljs-keyword">this</span>.gender = gender;
+    }
+
+    incrementAge() {
+      <span class="hljs-keyword">this</span>.age += <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+<p>And extend them using the <code>extends</code> keyword:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Personal</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Person</span> </span>{
+    <span class="hljs-keyword">constructor</span>(name, age, gender, occupation, hobby) {
+        <span class="hljs-keyword">super</span>(name, age, gender);
+        <span class="hljs-keyword">this</span>.occupation = occupation;
+        <span class="hljs-keyword">this</span>.hobby = hobby;
+    }
+
+    incrementAge() {
+        <span class="hljs-keyword">super</span>.incrementAge();
+        <span class="hljs-keyword">this</span>.age += <span class="hljs-number">20</span>;
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.age);
+    }
+}
+</code></pre>
+<blockquote>
+<p><strong>Best Practice</strong>: While the syntax for creating classes in ES6 obscures how
+implementation and prototypes work under the hood, it is a good feature for
+beginners and allows us to write cleaner code.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="symbols">Symbols</h2>
+<p>Symbols have existed prior to ES6, but now we have a public interface to using
+them directly. Symbols are immutable and unique and can be used as keys in any hash.</p>
+<h3 id="symbol-">Symbol( )</h3>
+<p>Calling <code>Symbol()</code> or <code>Symbol(description)</code> will create a unique symbol that cannot be looked up
+globally. A Use case for <code>Symbol()</code> is to patch objects or namespaces from third parties with your own
+logic, but be confident that you won&apos;t collide with updates to that library. For example,
+if you wanted to add a method <code>refreshComponent</code> to the <code>React.Component</code> class, and be certain that
+you didn&apos;t trample a method they add in a later update:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> refreshComponent = <span class="hljs-built_in">Symbol</span>();
+
+React.Component.prototype[refreshComponent] = () =&gt; {
+    <span class="hljs-comment">// do something</span>
+}
+</code></pre>
+<h3 id="symbolforkey">Symbol.for(key)</h3>
+<p><code>Symbol.for(key)</code> will create a Symbol that is still immutable and unique, but can be looked up globally.
+Two identical calls to <code>Symbol.for(key)</code> will return the same Symbol instance. NOTE: This is not true for
+<code>Symbol(description)</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;foo&apos;</span>) === <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;foo&apos;</span>) <span class="hljs-comment">// false</span>
+<span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;foo&apos;</span>) === <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;foo&apos;</span>) <span class="hljs-comment">// false</span>
+<span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;foo&apos;</span>) === <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;foo&apos;</span>) <span class="hljs-comment">// true</span>
+</code></pre>
+<p>A common use case for Symbols, and in particular with <code>Symbol.for(key)</code> is for interoperability. This can be
+achieved by having your code look for a Symbol member on object arguments from third parties that contain some
+known interface. For example:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reader</span>(<span class="hljs-params">obj</span>) </span>{
+    <span class="hljs-keyword">const</span> specialRead = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;specialRead&apos;</span>);
+    <span class="hljs-keyword">if</span> (obj[specialRead]) {
+        <span class="hljs-keyword">const</span> reader = obj[specialRead]();
+        <span class="hljs-comment">// do something with reader</span>
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">&apos;object cannot be read&apos;</span>);
+    }
+}
+</code></pre>
+<p>And then in another library:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> specialRead = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;specialRead&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeReadableType</span> </span>{
+    [specialRead]() {
+        <span class="hljs-keyword">const</span> reader = createSomeReaderFrom(<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">return</span> reader;
+    }
+}
+</code></pre>
+<blockquote>
+<p>A notable example of Symbol use for interoperability is <code>Symbol.iterator</code> which exists on all iterable
+types in ES6: Arrays, strings, generators, etc. When called as a method it returns an object with an Iterator
+interface.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="maps">Maps</h2>
+<p><strong>Maps</strong> is a much needed data structure in JavaScript. Prior to ES6, we created
+<strong>hash</strong> maps through objects:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+map[key1] = <span class="hljs-string">&apos;value1&apos;</span>;
+map[key2] = <span class="hljs-string">&apos;value2&apos;</span>;
+</code></pre>
+<p>However, this does not protect us from accidentally overriding functions with
+specific property names:</p>
+<pre><code class="lang-javascript">&gt; getOwnProperty({ hasOwnProperty: <span class="hljs-string">&apos;Hah, overwritten&apos;</span>}, <span class="hljs-string">&apos;Pwned&apos;</span>);
+&gt; <span class="hljs-built_in">TypeError</span>: Property <span class="hljs-string">&apos;hasOwnProperty&apos;</span> is not a <span class="hljs-function"><span class="hljs-keyword">function</span>
+</span></code></pre>
+<p>Actual <strong>Maps</strong> allow us to <code>set</code>, <code>get</code> and <code>search</code> for values (and much more).</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+&gt; map.set(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;david&apos;</span>);
+&gt; map.get(<span class="hljs-string">&apos;name&apos;</span>); <span class="hljs-comment">// david</span>
+&gt; map.has(<span class="hljs-string">&apos;name&apos;</span>); <span class="hljs-comment">// true</span>
+</code></pre>
+<p>The most amazing part of Maps is that we are no longer limited to just using
+strings. We can now use any type as a key, and it will not be type-cast to
+a string.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>([
+    [<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;david&apos;</span>],
+    [<span class="hljs-literal">true</span>, <span class="hljs-string">&apos;false&apos;</span>],
+    [<span class="hljs-number">1</span>, <span class="hljs-string">&apos;one&apos;</span>],
+    [{}, <span class="hljs-string">&apos;object&apos;</span>],
+    [<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}, <span class="hljs-string">&apos;function&apos;</span>]
+]);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">of</span> map.keys()) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> key);
+    <span class="hljs-comment">// &gt; string, boolean, number, object, function</span>
+}
+</code></pre>
+<blockquote>
+<p><strong>Note</strong>: Using non-primitive values such as functions or objects won&apos;t work
+when testing equality using methods such as <code>map.get()</code>. As such, stick to
+primitive values such as Strings, Booleans and Numbers.</p>
+</blockquote>
+<p>We can also iterate over maps using <code>.entries()</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [key, value] <span class="hljs-keyword">of</span> map.entries()) {
+    <span class="hljs-built_in">console</span>.log(key, value);
+}
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="weakmaps">WeakMaps</h2>
+<p>In order to store private data versions &lt; ES6, we had various ways of doing this.
+One such method was using naming conventions:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+    <span class="hljs-keyword">constructor</span>(age) {
+        <span class="hljs-keyword">this</span>._age = age;
+    }
+
+    _incrementAge() {
+        <span class="hljs-keyword">this</span>._age += <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+<p>But naming conventions can cause confusion in a codebase and are not always
+going to be upheld. Instead, we can use WeakMaps to store our values:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> _age = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>();
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+    <span class="hljs-keyword">constructor</span>(age) {
+        _age.set(<span class="hljs-keyword">this</span>, age);
+    }
+
+    incrementAge() {
+        <span class="hljs-keyword">let</span> age = _age.get(<span class="hljs-keyword">this</span>) + <span class="hljs-number">1</span>;
+        _age.set(<span class="hljs-keyword">this</span>, age);
+        <span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">50</span>) {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Midlife crisis&apos;</span>);
+        }
+    }
+}
+</code></pre>
+<p>The cool thing about using WeakMaps to store our private data is that their
+keys do not give away the property names, which can be seen by using
+<code>Reflect.ownKeys()</code>:</p>
+<pre><code class="lang-javascript">&gt; <span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> Person(<span class="hljs-number">50</span>);
+&gt; person.incrementAge(); <span class="hljs-comment">// &apos;Midlife crisis&apos;</span>
+&gt; <span class="hljs-built_in">Reflect</span>.ownKeys(person); <span class="hljs-comment">// []</span>
+</code></pre>
+<p>A more practical example of using WeakMaps is to store data which is associated
+to a DOM element without having to pollute the DOM itself:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>();
+<span class="hljs-keyword">let</span> el  = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;someElement&apos;</span>);
+
+<span class="hljs-comment">// Store a weak reference to the element with a key</span>
+map.set(el, <span class="hljs-string">&apos;reference&apos;</span>);
+
+<span class="hljs-comment">// Access the value of the element</span>
+<span class="hljs-keyword">let</span> value = map.get(el); <span class="hljs-comment">// &apos;reference&apos;</span>
+
+<span class="hljs-comment">// Remove the reference</span>
+el.parentNode.removeChild(el);
+el = <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">// map is empty, since the element is destroyed</span>
+</code></pre>
+<p>As shown above, once the object is destroyed by the garbage collector,
+the WeakMap will automatically remove the key-value pair which was identified
+by that object.</p>
+<blockquote>
+<p><strong>Note</strong>: To further illustrate the usefulness of this example, consider how
+jQuery stores a cache of objects corresponding to DOM elements which have
+references. Using WeakMaps, jQuery can automatically free up any memory that
+was associated with a particular DOM element once it has been removed from the
+document. In general, WeakMaps are very useful for any library that wraps DOM
+elements.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="promises">Promises</h2>
+<p>Promises allow us to turn our horizontal code (callback hell):</p>
+<pre><code class="lang-javascript">func1(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value1</span>) </span>{
+    func2(value1, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value2</span>) </span>{
+        func3(value2, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value3</span>) </span>{
+            func4(value3, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value4</span>) </span>{
+                func5(value4, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value5</span>) </span>{
+                    <span class="hljs-comment">// Do something with value 5</span>
+                });
+            });
+        });
+    });
+});
+</code></pre>
+<p>Into vertical code:</p>
+<pre><code class="lang-javascript">func1(value1)
+    .then(func2)
+    .then(func3)
+    .then(func4)
+    .then(func5, value5 =&gt; {
+        <span class="hljs-comment">// Do something with value 5</span>
+    });
+</code></pre>
+<p>Prior to ES6, we used <a href="https://github.com/petkaantonov/bluebird" target="_blank">bluebird</a> or
+<a href="https://github.com/kriskowal/q" target="_blank">Q</a>. Now we have Promises natively:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt;
+    reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;Failed to fulfill Promise&apos;</span>)))
+        .catch(reason =&gt; <span class="hljs-built_in">console</span>.log(reason));
+</code></pre>
+<p>Where we have two handlers, <strong>resolve</strong> (a function called when the Promise is
+<strong>fulfilled</strong>) and <strong>reject</strong> (a function called when the Promise is <strong>rejected</strong>).</p>
+<blockquote>
+<p><strong>Benefits of Promises</strong>: Error Handling using a bunch of nested callbacks
+can get chaotic. Using Promises, we have a clear path to bubbling errors up
+and handling them appropriately. Moreover, the value of a Promise after it has
+been resolved/rejected is immutable - it will never change.</p>
+</blockquote>
+<p>Here is a practical example of using Promises:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+
+<span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+  request.get(url, (error, response, body) =&gt; {
+    <span class="hljs-keyword">if</span> (body) {
+        resolve(<span class="hljs-built_in">JSON</span>.parse(body));
+      } <span class="hljs-keyword">else</span> {
+        resolve({});
+      }
+  });
+});
+</code></pre>
+<p>We can also <strong>parallelize</strong> Promises to handle an array of asynchronous
+operations by using <code>Promise.all()</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> urls = [
+  <span class="hljs-string">&apos;/api/commits&apos;</span>,
+  <span class="hljs-string">&apos;/api/issues/opened&apos;</span>,
+  <span class="hljs-string">&apos;/api/issues/assigned&apos;</span>,
+  <span class="hljs-string">&apos;/api/issues/completed&apos;</span>,
+  <span class="hljs-string">&apos;/api/issues/comments&apos;</span>,
+  <span class="hljs-string">&apos;/api/pullrequests&apos;</span>
+];
+
+<span class="hljs-keyword">let</span> promises = urls.map((url) =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    $.ajax({ url: url })
+      .done((data) =&gt; {
+        resolve(data);
+      });
+  });
+});
+
+<span class="hljs-built_in">Promise</span>.all(promises)
+  .then((results) =&gt; {
+    <span class="hljs-comment">// Do something with results of all our promises</span>
+ });
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="generators">Generators</h2>
+<p>Similar to how <a href="https://github.com/DrkSephy/es6-cheatsheet#promises" target="_blank">Promises</a> allow us to avoid
+<a href="http://callbackhell.com/" target="_blank">callback hell</a>, Generators allow us to flatten our code - giving our
+asynchronous code a synchronous feel. Generators are essentially functions which we can
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield" target="_blank">pause their execution</a>
+and subsequently return the value of an expression.</p>
+<p>A simple example of using generators is shown below:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">sillyGenerator</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">4</span>;
+}
+
+<span class="hljs-keyword">var</span> generator = sillyGenerator();
+&gt; <span class="hljs-built_in">console</span>.log(generator.next()); <span class="hljs-comment">// { value: 1, done: false }</span>
+&gt; <span class="hljs-built_in">console</span>.log(generator.next()); <span class="hljs-comment">// { value: 2, done: false }</span>
+&gt; <span class="hljs-built_in">console</span>.log(generator.next()); <span class="hljs-comment">// { value: 3, done: false }</span>
+&gt; <span class="hljs-built_in">console</span>.log(generator.next()); <span class="hljs-comment">// { value: 4, done: false }</span>
+</code></pre>
+<p>Where <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next" target="_blank">next</a>
+will allow us to push our generator forward and evaluate a new expression. While the above example is extremely
+contrived, we can utilize Generators to write asynchronous code in a synchronous manner:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Hiding asynchronousity with Generators</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">request</span>(<span class="hljs-params">url</span>) </span>{
+    getJSON(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
+        generator.next(response);
+    });
+}
+</code></pre>
+<p>And here we write a generator function that will return our data:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">getData</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> entry1 = <span class="hljs-keyword">yield</span> request(<span class="hljs-string">&apos;http://some_api/item1&apos;</span>);
+    <span class="hljs-keyword">var</span> data1  = <span class="hljs-built_in">JSON</span>.parse(entry1);
+    <span class="hljs-keyword">var</span> entry2 = <span class="hljs-keyword">yield</span> request(<span class="hljs-string">&apos;http://some_api/item2&apos;</span>);
+    <span class="hljs-keyword">var</span> data2  = <span class="hljs-built_in">JSON</span>.parse(entry2);
+}
+</code></pre>
+<p>By the power of <code>yield</code>, we are guaranteed that <code>entry1</code> will have the data needed to be parsed and stored
+in <code>data1</code>.</p>
+<p>While generators allow us to write asynchronous code in a synchronous manner, there is no clear
+and easy path for error propagation. As such, as we can augment our generator with Promises:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">request</span>(<span class="hljs-params">url</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+        getJSON(url, resolve);
+    });
+}
+</code></pre>
+<p>And we write a function which will step through our generator using <code>next</code> which in turn will utilize our
+<code>request</code> method above to yield a Promise:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">iterateGenerator</span>(<span class="hljs-params">gen</span>) </span>{
+    <span class="hljs-keyword">var</span> generator = gen();
+    (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">iterate</span>(<span class="hljs-params">val</span>) </span>{
+        <span class="hljs-keyword">var</span> ret = generator.next();
+        <span class="hljs-keyword">if</span>(!ret.done) {
+            ret.value.then(iterate);
+        }
+    })();
+}
+</code></pre>
+<p>By augmenting our Generator with Promises, we have a clear way of propagating errors through the use of our
+Promise <code>.catch</code> and <code>reject</code>. To use our newly augmented Generator, it is as simple as before:</p>
+<pre><code class="lang-javascript">iterateGenerator(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">getData</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> entry1 = <span class="hljs-keyword">yield</span> request(<span class="hljs-string">&apos;http://some_api/item1&apos;</span>);
+    <span class="hljs-keyword">var</span> data1  = <span class="hljs-built_in">JSON</span>.parse(entry1);
+    <span class="hljs-keyword">var</span> entry2 = <span class="hljs-keyword">yield</span> request(<span class="hljs-string">&apos;http://some_api/item2&apos;</span>);
+    <span class="hljs-keyword">var</span> data2  = <span class="hljs-built_in">JSON</span>.parse(entry2);
+});
+</code></pre>
+<p>We were able to reuse our implementation to use our Generator as before, which shows their power. While Generators
+and Promises allow us to write asynchronous code in a synchronous manner while retaining the ability to propagate
+errors in a nice way, we can actually begin to utilize a simpler construction that provides the same benefits:
+<a href="https://github.com/DrkSephy/es6-cheatsheet#async-await" target="_blank">async-await</a>.</p>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="async-await">Async Await</h2>
+<p>While this is actually an upcoming ES2016 feature, <code>async await</code> allows us to perform the same thing we accomplished
+using Generators and Promises with less effort:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getJSON</span>(<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    request(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+      resolve(body);
+    });
+  });
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> data = <span class="hljs-keyword">await</span> getJSON();
+  <span class="hljs-built_in">console</span>.log(data); <span class="hljs-comment">// NOT undefined!</span>
+}
+
+main();
+</code></pre>
+<p>Under the hood, it performs similarly to Generators. I highly recommend using them over Generators + Promises. A great resource
+for getting up and running with ES7 and Babel can be found <a href="http://masnun.com/2015/11/11/using-es7-asyncawait-today-with-babel.html" target="_blank">here</a>.</p>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h2 id="getter-and-setter-functions">Getter and setter functions</h2>
+<p>ES6 has started supporting getter and setter functions within classes. Using the following example:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> </span>{
+
+    <span class="hljs-keyword">constructor</span>(name) {
+        <span class="hljs-keyword">this</span>._name = name;
+    }
+
+    get name() {
+      <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>._name) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Mr. &apos;</span> + <span class="hljs-keyword">this</span>._name.toUpperCase();  
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+      }  
+    }
+
+    set name(newName) {
+      <span class="hljs-keyword">if</span> (newName == <span class="hljs-keyword">this</span>._name) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;I already have this name.&apos;</span>);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (newName) {
+        <span class="hljs-keyword">this</span>._name = newName;
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+      }
+    }
+}
+
+<span class="hljs-keyword">var</span> emp = <span class="hljs-keyword">new</span> Employee(<span class="hljs-string">&quot;James Bond&quot;</span>);
+
+<span class="hljs-comment">// uses the get method in the background</span>
+<span class="hljs-keyword">if</span> (emp.name) {
+  <span class="hljs-built_in">console</span>.log(emp.name);  <span class="hljs-comment">// Mr. JAMES BOND</span>
+}
+
+<span class="hljs-comment">// uses the setter in the background</span>
+emp.name = <span class="hljs-string">&quot;Bond 007&quot;</span>;
+<span class="hljs-built_in">console</span>.log(emp.name);  <span class="hljs-comment">// Mr. BOND 007</span>
+</code></pre>
+<p>Latest browsers are also supporting getter/setter functions in Objects and we can use them for computed properties, adding listeners and preprocessing before setting/getting:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> person = {
+  firstName: <span class="hljs-string">&apos;James&apos;</span>,
+  lastName: <span class="hljs-string">&apos;Bond&apos;</span>,
+  get fullName() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Getting FullName&apos;</span>);
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.lastName;
+  },
+  set fullName (name) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Setting FullName&apos;</span>);
+      <span class="hljs-keyword">var</span> words = name.toString().split(<span class="hljs-string">&apos; &apos;</span>);
+      <span class="hljs-keyword">this</span>.firstName = words[<span class="hljs-number">0</span>] || <span class="hljs-string">&apos;&apos;</span>;
+      <span class="hljs-keyword">this</span>.lastName = words[<span class="hljs-number">1</span>] || <span class="hljs-string">&apos;&apos;</span>;
+  }
+}
+
+person.fullName; <span class="hljs-comment">// James Bond</span>
+person.fullName = <span class="hljs-string">&apos;Bond 007&apos;</span>;
+person.fullName; <span class="hljs-comment">// Bond 007</span>
+</code></pre>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"3.2.3","theme":"default","variables":{},"plugins":["scripts","livereload"],"pluginsConfig":{"fontsettings":{"theme":"sepia","family":"sans","size":2},"scripts":{"files":["./scripts/main.js"]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-09-20T04:54:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-22T11:57:30.265Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/1ce4f4ea8cd3315fac80186312cf5ff8-main.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+.gitbook-link {
+	display: none !important;
+}
+
+a[href*="book/kcak11"] {
+	display: none !important;
+}
+
+li.chapter a {
+	font-weight: bold !important;
+}
+
+.color-theme-1 li.chapter a {
+	color: #fff !important;
+}
+
+#book-search-input {
+	display: none !important;
+}
+
+h1 a {
+	visibility: hidden !important;
+}
